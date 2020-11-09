@@ -1,0 +1,4 @@
+{
+   "codes": ["11YVCHAR001", "11YVCHAR002", "15MPPN002-VK"],
+   "strategies": ["year", "variety", "region", "year-variety" ]
+}

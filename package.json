@@ -1,0 +1,26 @@
+{
+  "name": "vintrace_rest_api",
+  "version": "1.0.0",
+  "description": "Simple rest api to deliver dummy data from various queries",
+  "main": "../vintrace_rest_api/index.js",
+  "scripts": {
+    "start": "../vintrace_rest_api/node_modules/.bin/nodemon ./index.js --exec babel-node -e js",
+    "debug": "DEBUG=express:* nodemon ../vintrace_rest_api/index.js --exec babel-node -e js"
+  },
+  "keywords": [
+    "Express",
+    "Node",
+    "Rest"
+  ],
+  "author": "William Jefferies",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1"
+  }
+}
