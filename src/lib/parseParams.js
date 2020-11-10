@@ -4,7 +4,7 @@ import * as lib from '.'
 /*
 Extracts Params from API call
  */
-export default (req, caller_name, handleErrParams) => {
+export default (req, caller_name, handleErrVars) => {
     const expectedParamsSize = 3;
     let param;
 
@@ -13,12 +13,12 @@ export default (req, caller_name, handleErrParams) => {
 
 
     if (!params.length >= expectedParamsSize) {
-        lib.handleErr(handleErrParams);
+        lib.handleErr(handleErrVars);
     }
 
     caller_name === 'setStrategy' ? param = params[1] // expected strategy param
         : caller_name === 'setLotCode' ? param = params[2] // expected lot code param
-        : lib.handleErr(handleErrParams)
+        : lib.handleErr(handleErrVars)
 
     return param;
 };

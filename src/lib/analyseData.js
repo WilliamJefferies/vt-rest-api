@@ -4,7 +4,7 @@ import * as lib from '.';
 /*
 Calls strategy for analysis and sorts data, could be two strategies in the future
  */
-export default (data, strategy, handleErrParams) => {
+export default (data, strategy, handleErrVars) => {
     switch (strategy) {
         case 'year':
             return strategies.yearlyStrategy(data);
@@ -15,6 +15,6 @@ export default (data, strategy, handleErrParams) => {
         case 'year-variety':
             return strategies.yearVarietyStrategy(data);
         default:
-            lib.handleErr(handleErrParams);
+            lib.handleErr(handleErrVars);
     }
 };

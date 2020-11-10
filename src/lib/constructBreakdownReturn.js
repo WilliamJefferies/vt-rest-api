@@ -1,7 +1,7 @@
 import * as lib from '.'
 
 // Constructs breakdown res send object
-export default (strategy, lotCode, sortedData, handleErrParams) => {
+export default (strategy, lotCode, sortedData, handleErrVars) => {
     try {
         return {
             breakDownType: strategy,
@@ -9,6 +9,6 @@ export default (strategy, lotCode, sortedData, handleErrParams) => {
             breakdown: sortedData
         };
     } catch (err) {
-        lib.handleErr(handleErrParams, err);
+        lib.handleErr(handleErrVars, err);
     }
 }

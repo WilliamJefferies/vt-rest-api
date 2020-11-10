@@ -12,13 +12,13 @@ const getValidStrategies = () => {
 }
 
 // validates params with known analysis analysisStrategies and lotcodes
-const validateParams = (caller_name, param, handleErrParams) => {
+const validateParams = (caller_name, param, handleErrVars) => {
     let validList;
     caller_name === 'setStrategy' ? validList = getValidStrategies()
         : caller_name === 'setLotCode' ? validList = getValidLotCodes()
-        : lib.handleErr(handleErrParams);
+        : lib.handleErr(handleErrVars);
     if (validList.includes(param)) return true;
-    lib.handleErr(handleErrParams);
+    lib.handleErr(handleErrVars);
 };
 
 

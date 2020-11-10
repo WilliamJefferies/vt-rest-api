@@ -1,11 +1,11 @@
 import * as lib from '../lib';
 
 export default (req, res) => {
-    const handleErrParams = {
+    const handleErrVars = {
         code: 500,
         message: '500 Internal Err. Could not retrieve lot codes',
         res: res
     };
 
-    res.json(lib.constructValidParamsReturn('getLotCodesHandler', handleErrParams));
+    res.json(lib.constructValidParamsReturn('getLotCodesHandler', handleErrVars));
 }

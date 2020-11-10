@@ -1,5 +1,8 @@
-export default (handleErrParams) => {
-    console.error(handleErrParams.message);
-    handleErrParams.res.status(handleErrParams.code).send(handleErrParams.message);
-    throw new Error(handleErrParams.message);
+/*
+This should really be a singleton class rather than functionally called
+ */
+export default (handleErrVars) => {
+    console.error(handleErrVars.message);
+    handleErrVars.res.status(handleErrVars.code).send(handleErrVars.message);
+    throw new Error(handleErrVars.message);
 };

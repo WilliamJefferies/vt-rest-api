@@ -4,7 +4,7 @@ export default (req, res) => {
     const strategy = req.analysisStrategy;
     const lotCode = req.lotCode;
 
-    const handleErrParams = {
+    const handleErrVars = {
         code: 500,
         message: `500 Internal Server Error:
     Could not handle breakdown request

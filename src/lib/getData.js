@@ -4,7 +4,7 @@ import * as lib from '.'
 /*
 DB Wrapper
  */
-export default (lotCode, handleErrParams) => {
+export default (lotCode, handleErrVars) => {
     switch (lotCode.toLowerCase()) {
         case '11yvchar001':
             return dataConnector.lot1.components;
@@ -13,6 +13,6 @@ export default (lotCode, handleErrParams) => {
         case '15mppn002-vk':
             return dataConnector.lot3.components;
         default:
-            lib.handleErr(handleErrParams);
+            lib.handleErr(handleErrVars);
     }
 };
