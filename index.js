@@ -1,11 +1,13 @@
 import express from 'express';
+import helmet from 'helmet';
 import * as middleware from './src/middleware';
 import * as handlers from "./src/handlers";
 
 const app = express();
 const PORT = 3000;
 
-// helmet ?
+// first layer security
+app.use(helmet)
 
 // middleware for identifying the sorting strategy
 app.use('/api/breakdown/', middleware.setStrategy);
