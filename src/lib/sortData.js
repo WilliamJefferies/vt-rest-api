@@ -10,9 +10,7 @@ export default (data) => {
     for (let item in data) {
         sortable.push([data[item], data[item].percentage]);
     }
-    const sorted = sortable.sort(function (a, b) {
-        return b[1] - a[1];
-    });
+    const sorted = sortable.sort((a, b) => b[1] - a[1]);
 
     for (let item in sorted) {
         returnArr.push(sorted[item][0]);
