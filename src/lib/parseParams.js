@@ -2,6 +2,10 @@ import url from 'url';
 import * as lib from '.'
 
 /*
+should group param functions together
+ */
+
+/*
 Extracts Params from API call
  */
 export default (req, caller_name, handleErrVars) => {

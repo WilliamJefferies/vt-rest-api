@@ -1,6 +1,10 @@
 import * as lib from '.'
 
 /*
+Builder should not be split in seperate files
+ */
+
+/*
 Constructs res send object with either analysis strategies or lot codes
 should be in db wrapper in prod env
  */
