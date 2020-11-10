@@ -1,5 +1,7 @@
 import * as lib from '.'
 
+// decide on merits of keeping seperate todo
+
 /*
 Sorts an object into an array of nested percentage values
 could be done better with more time to avoid duplication of memory
