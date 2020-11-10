@@ -2,10 +2,10 @@
   "name": "vintrace_rest_api",
   "version": "1.0.0",
   "description": "Simple rest api to deliver dummy data from various queries",
-  "main": "../vintrace_rest_api/index.js",
+  "main": "index.js",
   "scripts": {
-    "start": "../vintrace_rest_api/node_modules/.bin/nodemon ./index.js --exec babel-node -e js",
-    "debug": "DEBUG=express:* nodemon ../vintrace_rest_api/index.js --exec babel-node -e js"
+    "start": "nodemon index.js --exec babel-node -e js",
+    "debug": "DEBUG=express:* nodemon index.js --exec babel-node -e js"
   },
   "keywords": [
     "Express",

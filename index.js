@@ -1,20 +1,25 @@
 import express from 'express';
-import setStrategy from "./src/middleware/setStrategy";
-import setLotCode from "./src/middleware/setLotCode";
-import breakdownHandler from "./src/breakdownHandler";
+import * as middleware from './src/middleware';
+import * as handlers from "./src/handlers";
+
 const app = express();
 const PORT = 3000;
+
 // helmet ?
 
-// set strategy
-app.use(setStrategy)
+// middleware for identifying the sorting strategy
+app.use('/api/breakdown/', middleware.setStrategy);
 
-// set lot code
-app.use(setLotCode)
+// middleware for identifying the lotcode
+app.use('/api/breakdown/', middleware.setLotCode);
 
-app.get('/api/breakdown/*', (req, res) => breakdownHandler)
+app.get('/api/breakdown/*', (req, res) => handlers.getBreakdownHandler(req, res));
+
+app.get('/api/lotcodes', (req, res) => handlers.getLotCodesHandler(req, res));
+
+app.get('/api/analysis-strategies', (req, res) => handlers.getAnalysisStrategiesHandler(req, res));
 
 
 app.listen(PORT, () => {
-    `Server running on ${PORT}`
-})
+    console.log(`Server running on ${PORT}`);
+});
