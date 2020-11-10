@@ -1,7 +1,7 @@
 import * as lib from '.'
 
 /*
-constructs return object with either analysis strategies or lot codes
+Constructs res send object with either analysis strategies or lot codes
 should be in db wrapper in prod env
  */
 export default (caller_name, handleErrParams) => {

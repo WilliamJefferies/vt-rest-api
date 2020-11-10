@@ -4,7 +4,6 @@ import * as lib from '.'
 /*
 Extracts Params from API call
  */
-
 export default (req, caller_name, handleErrParams) => {
     const expectedParamsSize = 3;
     let param;

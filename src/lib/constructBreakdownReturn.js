@@ -1,6 +1,6 @@
 import * as lib from '.'
 
-// constructs breakdown return object
+// Constructs breakdown res send object
 export default (strategy, lotCode, sortedData, handleErrParams) => {
     try {
         return {

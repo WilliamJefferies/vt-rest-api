@@ -4,7 +4,7 @@ import * as lib from '.'
 Sorts an object into an array of nested percentage values
 could be done better with more time to avoid duplication of memory
  */
-export default (data, handleErrParams) => {
+export default (data) => {
     let sortable = [];
     let returnData = [];
     for (let item in data) {
