@@ -8,7 +8,7 @@ export default (data) => {
         } else {
             processedData[year] = {
                 year: year,
-                percentage: percentag
+                percentage: percentage
             }
 
         }
