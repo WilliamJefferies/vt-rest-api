@@ -1,4 +1,4 @@
-import * as strategies from '../breakdownStrategies';
+import * as strategies from '../breakDownStrategies';
 import * as lib from './index';
 
 /*

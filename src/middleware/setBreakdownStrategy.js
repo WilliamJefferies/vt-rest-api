@@ -9,8 +9,8 @@ export default (req, res, next) => {
         message: '400 Bad Request: Invalid Breakdown Strategy',
         res: res
     };
-    const strategy = lib.parseParams(req, 'setStrategy', handleErrVars);
-    lib.validateParams('setStrategy', strategy, handleErrVars);
-    req.breakdownStrategy = strategy.toLowerCase(); //standardise
+    const strategy = lib.parseParams(req, 'setBreakDownStrategy', handleErrVars);
+    lib.validateParams('setBreakDownStrategy', strategy, handleErrVars);
+    req.breakDownStrategy = strategy.toLowerCase(); //standardise
     next();
 };

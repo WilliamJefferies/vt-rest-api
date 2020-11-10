@@ -1,7 +1,7 @@
 import * as lib from "../lib";
 
 export default (req, res) => {
-    const strategy = req.breakdownStrategy;
+    const strategy = req.breakDownStrategy;
     const lotCode = req.lotCode;
 
     const handleErrVars = {
@@ -13,9 +13,9 @@ export default (req, res) => {
         res: res
     };
 
-    const data = lib.getData(lotCode, handleErrParams);
-    const brokendownData = lib.breakdownData(data, strategy, handleErrParams);
-    const sortedData = lib.sortData(brokendownData, handleErrParams);
+    const data = lib.getData(lotCode, handleErrVars);
+    const brokenDownData = lib.breakDownData(data, strategy, handleErrVars);
+    const sortedData = lib.sortData(brokenDownData, handleErrVars);
     const returnObj = lib.constructBreakdownRes(strategy, lotCode, sortedData, handleErrVars);
 
     res.json(returnObj);

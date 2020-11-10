@@ -10,16 +10,16 @@ const PORT = 3000;
 app.use(helmet)
 
 // middleware for identifying the sorting strategy
-app.use('/api/breakdown/', middleware.setBreakdownStrategy);
+app.use('/api/breakdown/', middleware.setBreakDownStrategy);
 
 // middleware for identifying the lotcode
 app.use('/api/breakdown/', middleware.setLotCode);
 
-app.get('/api/breakdown/*', (req, res) => handlers.getBreakdownHandler(req, res));
+app.get('/api/breakdown/*', (req, res) => handlers.getBreakDownHandler(req, res));
 
 // should be one path in the future
 app.get('/api/lotcodes', (req, res) => handlers.getLotCodesHandler(req, res));
-app.get('/api/breakdown-strategies', (req, res) => handlers.getBreakdownStrategiesHandler(req, res));
+app.get('/api/breakdown-strategies', (req, res) => handlers.getBreakDownStrategiesHandler(req, res));
 
 
 app.listen(PORT, () => {

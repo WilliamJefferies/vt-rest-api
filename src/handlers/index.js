@@ -1,5 +1,5 @@
-export getBreakdownHandler from './getBreakdownHandler';
+export getBreakDownHandler from './getBreakDownHandler';
 export getLotCodesHandler from './getLotCodesHandler';
-export getBreakdownStrategiesHandler from './getBreakdownStrategiesHandler';
+export getBreakDownStrategiesHandler from './getBreakDownStrategiesHandler';
 
 //todo: reduce to two handlers

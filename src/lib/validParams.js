@@ -6,12 +6,12 @@ const getValidLotCodes = () => {
     return dataConnector.validParams.codes;
 }
 
-// called on valid breakdownStrategies get request
+// called on valid breakDownStrategies get request
 const getValidStrategies = () => {
     return dataConnector.validParams.strategies;
 }
 
-// validates params with known analysis breakdownStrategies and lotcodes
+// validates params with known analysis breakDownStrategies and lotcodes
 const validateParams = (caller_name, param, handleErrVars) => {
     let validList;
     caller_name === 'setStrategy' ? validList = getValidStrategies()

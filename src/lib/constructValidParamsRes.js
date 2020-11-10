@@ -7,7 +7,7 @@ should be in db wrapper in prod env
 export default (caller_name, handleErrVars) => {
     let valid;
     try {
-        caller_name === 'getBreakdownStrategiesHandler' ? valid = lib.getValidStrategies()
+        caller_name === 'getBreakDownStrategiesHandler' ? valid = lib.getValidStrategies()
             : caller_name === 'getLotCodesHandler' ? valid = lib.getValidLotCodes()
             : lib.handleErr(handleErrVars);
         return {

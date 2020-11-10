@@ -6,7 +6,7 @@ could be done better with more time to avoid duplication of memory
  */
 export default (data) => {
     let sortable = [];
-    let returnData = [];
+    let returnArr = [];
     for (let item in data) {
         sortable.push([data[item], data[item].percentage]);
     }
@@ -15,7 +15,7 @@ export default (data) => {
     });
 
     for (let item in sorted) {
-        returnData.push(sorted[item][0]);
+        returnArr.push(sorted[item][0]);
     }
-    return returnData;
+    return returnArr;
 };
