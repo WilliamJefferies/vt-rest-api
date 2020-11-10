@@ -16,7 +16,7 @@ export default (req, res) => {
     const data = lib.getData(lotCode, handleErrParams);
     const analysedData = lib.breakdownData(data, strategy, handleErrParams);
     const sortedData = lib.sortData(analysedData, handleErrParams);
-    const returnObj = lib.constructBreakdownReturn(strategy, lotCode, sortedData, handleErrParams);
+    const returnObj = lib.constructBreakdownRes(strategy, lotCode, sortedData, handleErrParams);
 
     res.json(returnObj);
 };

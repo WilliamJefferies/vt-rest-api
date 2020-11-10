@@ -7,5 +7,5 @@ export default (req, res) => {
         res: res
     };
 
-    res.json(lib.constructValidParamsReturn('getLotCodesHandler', handleErrVars));
+    res.json(lib.constructValidParamsRes('getLotCodesHandler', handleErrVars));
 }
