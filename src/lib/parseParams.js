@@ -20,7 +20,7 @@ export default (req, caller_name, handleErrVars) => {
         lib.handleErr(handleErrVars);
     }
 
-    caller_name === 'setStrategy' ? param = params[1] // expected strategy param
+    caller_name === 'setBreakDownStrategy' ? param = params[1] // expected strategy param
         : caller_name === 'setLotCode' ? param = params[2] // expected lot code param
         : lib.handleErr(handleErrVars)
 

@@ -11,10 +11,10 @@ const getValidStrategies = () => {
     return dataConnector.validParams.strategies;
 }
 
-// validates params with known analysis breakDownStrategies and lotcodes
+// validates params with known breakDownStrategies and lotcodes
 const validateParams = (caller_name, param, handleErrVars) => {
     let validList;
-    caller_name === 'setStrategy' ? validList = getValidStrategies()
+    caller_name === 'setBreakDownStrategy' ? validList = getValidStrategies()
         : caller_name === 'setLotCode' ? validList = getValidLotCodes()
         : lib.handleErr(handleErrVars);
     if (validList.includes(param)) return true;
