@@ -9,10 +9,10 @@ const PORT = 3000;
 // first layer security
 app.use(helmet())
 
-// middleware for identifying the sorting strategy
+// middleware for identifying the break down strategy
 app.use('/api/breakdown/', middleware.setBreakDownStrategy);
 
-// middleware for identifying the lotcode
+// middleware for identifying the lot code
 app.use('/api/breakdown/', middleware.setLotCode);
 
 app.get('/api/breakdown/*', (req, res) => handlers.getBreakDownHandler(req, res));
