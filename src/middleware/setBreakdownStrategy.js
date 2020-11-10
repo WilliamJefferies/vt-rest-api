@@ -11,6 +11,6 @@ export default (req, res, next) => {
     };
     const strategy = lib.parseParams(req, 'setStrategy', handleErrVars);
     lib.validateParams('setStrategy', strategy, handleErrVars);
-    req.analysisStrategy = strategy.toLowerCase(); //standardise
+    req.breakdownStrategy = strategy.toLowerCase(); //standardise
     next();
 };

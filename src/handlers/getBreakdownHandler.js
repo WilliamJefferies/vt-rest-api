@@ -1,7 +1,7 @@
 import * as lib from "../lib";
 
 export default (req, res) => {
-    const strategy = req.analysisStrategy;
+    const strategy = req.breakdownStrategy;
     const lotCode = req.lotCode;
 
     const handleErrVars = {
