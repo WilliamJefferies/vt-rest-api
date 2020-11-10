@@ -1,8 +1,6 @@
 import * as lib from './index'
 
-/*
-Builder should not be split in seperate files
- */
+// make builders into one file todo
 
 
 // Constructs breakdown res send object

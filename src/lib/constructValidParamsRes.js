@@ -1,11 +1,8 @@
 import * as lib from '.'
 
+// make builders into one file todo
 /*
-Builder should not be split in seperate files
- */
-
-/*
-Constructs res send object with either analysis strategies or lot codes
+Constructs res send object with either break down strategies or lot codes
 should be in db wrapper in prod env
  */
 export default (caller_name, handleErrVars) => {

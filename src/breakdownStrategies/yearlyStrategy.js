@@ -1,6 +1,4 @@
-/*
-This is practically duplicate code and needs to be fixed up, was last step and not thought out
- */
+// should be one function/file for now. strategies do not differ enough todo
 
 export default (data) => {
     let processedData = {};

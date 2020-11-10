@@ -1,6 +1,8 @@
 import * as dataConnector from '../../data'
 import * as lib from '.'
 
+// group param funcs together todo
+
 // called on lot codes get request
 const getValidLotCodes = () => {
     return dataConnector.validParams.codes;

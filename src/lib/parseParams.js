@@ -1,9 +1,7 @@
 import url from 'url';
 import * as lib from '.'
 
-/*
-should group param functions together
- */
+// group params together todo
 
 /*
 Extracts Params from API call
