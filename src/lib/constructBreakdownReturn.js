@@ -8,7 +8,7 @@ export default (strategy, lotCode, sortedData, handleErrVars) => {
             lotCode: lotCode,
             breakdown: sortedData
         };
-    } catch (err) {
-        lib.handleErr(handleErrVars, err);
+    } catch (e) {
+        lib.handleErr(handleErrVars, e);
     }
 }

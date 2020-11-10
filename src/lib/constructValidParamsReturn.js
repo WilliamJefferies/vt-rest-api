@@ -13,7 +13,7 @@ export default (caller_name, handleErrVars) => {
         return {
             validInput: valid
         }
-    } catch (err) {
-        lib.handleErr(handleErrVars, err);
+    } catch (e) {
+        lib.handleErr(handleErrVars, e);
     }
 };
