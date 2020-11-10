@@ -2,7 +2,7 @@ import * as strategies from '../analysisStrategies';
 import * as lib from '.';
 
 /*
-Calls strategy for analysis and sorts data
+Calls strategy for analysis and sorts data, could be two strategies in the future
  */
 export default (data, strategy, handleErrParams) => {
     switch (strategy) {
