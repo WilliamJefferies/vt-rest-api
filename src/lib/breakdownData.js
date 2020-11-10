@@ -1,8 +1,8 @@
-import * as strategies from '../analysisStrategies';
-import * as lib from '.';
+import * as strategies from '../breakdownStrategies';
+import * as lib from './index';
 
 /*
-Calls strategy for analysis and sorts data, could be two strategies in the future
+Calls strategy for breakdown and sorts data, could be two strategies in the future
  */
 export default (data, strategy, handleErrVars) => {
     switch (strategy) {

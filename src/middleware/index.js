@@ -1,2 +1,2 @@
 export setLotCode from './setLotCode';
-export setStrategy from './setStrategy';
+export setBreakdownStrategy from './setBreakdownStrategy';

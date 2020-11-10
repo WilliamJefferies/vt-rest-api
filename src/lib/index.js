@@ -1,4 +1,4 @@
-export analyseData from './analyseData';
+export breakdownData from './breakdownData';
 export constructBreakdownReturn from './constructBreakdownReturn';
 export constructValidParamsReturn from './constructValidParamsReturn';
 export getData from './getData';

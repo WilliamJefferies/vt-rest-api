@@ -1,4 +1,4 @@
-import * as lib from '.'
+import * as lib from './index'
 
 // Constructs breakdown res send object
 export default (strategy, lotCode, sortedData, handleErrVars) => {
