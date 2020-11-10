@@ -7,7 +7,7 @@ const app = express();
 const PORT = 3000;
 
 // first layer security
-app.use(helmet)
+app.use(helmet())
 
 // middleware for identifying the sorting strategy
 app.use('/api/breakdown/', middleware.setBreakDownStrategy);
