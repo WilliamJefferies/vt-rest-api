@@ -10,7 +10,7 @@ Simple rest API for demonstration of node skills using a simple strategy design 
 ### Calling the API
 ##### Get lotcodes
 ```/api/lotcodes```
-##### Get analysis methods
-```/api/analysis-strategies```
+##### Get breakdown strategies
+```/api/breakdown-strategies```
 ##### Get breakdown
-```/api/breakdown/${analysis-strategy}/${lotcode}```
+```/api/breakdown/${breakdown-strategy}/${lotcode}```
