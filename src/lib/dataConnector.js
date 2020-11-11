@@ -8,12 +8,12 @@ DB Wrapper
 // called on lot codes get request
 const getValidLotCodes = () => {
     return dataConnector.validParams.codes;
-}
+};
 
 // called on valid strategies get request
 const getValidStrategies = () => {
     return dataConnector.validParams.strategies;
-}
+};
 
 const getData = (lotCode, handleErrVars) => {
     switch (lotCode.toLowerCase()) {
@@ -28,4 +28,4 @@ const getData = (lotCode, handleErrVars) => {
     }
 };
 
-export {getValidLotCodes, getValidStrategies, getData}
+export {getValidLotCodes, getValidStrategies, getData};

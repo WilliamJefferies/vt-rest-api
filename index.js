@@ -17,7 +17,7 @@ app.use('/api/breakdown/', middleware.setLotCode);
 
 app.get('/api/breakdown/*', (req, res) => handlers.getBreakDownHandler(req, res));
 
-// should be one path in the future
+
 app.get('/api/lotcodes', (req, res) => handlers.getLotCodesHandler(req, res));
 app.get('/api/breakdown-strategies', (req, res) => handlers.getBreakDownStrategiesHandler(req, res));
 

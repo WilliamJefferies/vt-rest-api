@@ -4,17 +4,14 @@ const run = (data, strategy, handleErrVars) => {
     let processedData = {};
 
     for (let item in data) {
-        let {propertyType, propertyVal} = useStrategy(data[item], strategy, handleErrVars)
+        let {propertyType, propertyVal} = useStrategy(data[item], strategy, handleErrVars);
         let percentage = data[item].percentage;
-        console.log(percentage)
-        console.log(propertyVal)
-        console.log(propertyType)
         if (processedData.hasOwnProperty(propertyVal)) {
-            processedData[propertyVal].percentage += percentage
+            processedData[propertyVal].percentage += percentage;
         } else {
             processedData[propertyVal] = {
                 percentage: percentage
-            }
+            };
             processedData[propertyVal][propertyType] = propertyVal;
         }
     }
@@ -27,7 +24,7 @@ const sort = (data) => {
     let sortable = [];
     let returnArr = [];
     for (let item in data) {
-        sortable.push([data[item], data[item].percentage]);
+        sortable.push([data[item], data[item].percentage]);;
     }
     const sorted = sortable.sort((a, b) => b[1] - a[1]);
 
@@ -38,8 +35,8 @@ const sort = (data) => {
 };
 
 const useStrategy = (item, strategy, handleErrVars) => {
-    let propertyType
-    let propertyVal
+    let propertyType;
+    let propertyVal;
     switch (strategy) {
         case 'region':
             propertyType = 'region';
@@ -63,4 +60,4 @@ const useStrategy = (item, strategy, handleErrVars) => {
     return {propertyType, propertyVal};
 }
 
-export {run, sort}
+export {run, sort};

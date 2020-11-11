@@ -13,8 +13,8 @@ export default (req, res) => {
         res: res
     };
 
-    const data = lib.getData(lotCode, handleErrVars);
-    const brokenDownData = lib.breakDownData(data, strategy, handleErrVars);
-    const sortedData = lib.sortData(brokenDownData, handleErrVars);
+    const data = lib.dataConnector.getData(lotCode, handleErrVars);
+    const brokenDownData = lib.breakdown.run(data, strategy, handleErrVars);
+    const sortedData = lib.breakdown.sort(brokenDownData, handleErrVars);
     res.json(lib.resBuilder.breakdown(strategy, lotCode, sortedData, handleErrVars));
 };

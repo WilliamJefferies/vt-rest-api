@@ -7,4 +7,4 @@ export default (req, res) => {
         res: res
     };
     res.json(lib.resBuilder.validParams('getBreakdownStrategiesHandler', handleErrVars));
-}
+};

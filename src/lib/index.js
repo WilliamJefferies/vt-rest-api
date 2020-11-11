@@ -1,8 +1,6 @@
-export breakDownData from './breakDownData';
-export getData from './getData';
+export * as breakdown from './breakdown';
+export * as dataConnector from './dataConnector';
 export handleErr from './handleErr';
-export parseParams from './parseParams';
+export * as params from './params';
 export * as resBuilder from './resBuilder'
-export sortData from './sortData';
-export * from './validParams';
 

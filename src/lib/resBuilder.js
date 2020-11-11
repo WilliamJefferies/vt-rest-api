@@ -20,10 +20,10 @@ const validParams = (caller_name, handleErrVars) => {
             : lib.handleErr(handleErrVars);
         return {
             validInput: valid
-        }
+        };
     } catch (e) {
         lib.handleErr(handleErrVars, e);
     }
 };
 
-export {breakdown, validParams}
+export {breakdown, validParams};

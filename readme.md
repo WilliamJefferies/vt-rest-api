@@ -90,13 +90,13 @@ Uses vanilla middleware for param extraction and validation.
 │   ├───getLotCodesHandler.js
 │   └───index.js
 ├───lib/
-│   ├───breakDownData.js
+│   ├───breakdown.js
 │   ├───constructBreakDownRes.js
 │   ├───constructValidParamsRes.js
-│   ├───getData.js
+│   ├───dataConnector.js
 │   ├───handleErr.js
 │   ├───index.js
-│   ├───parseParams.js
+│   ├───params.js
 │   ├───sortData.js
 │   └───validParams.js
 └───middleware/
