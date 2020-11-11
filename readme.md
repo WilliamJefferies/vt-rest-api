@@ -91,9 +91,9 @@ Uses vanilla middleware for param extraction and validation.
     |   |-- valid_params.json
     |-- src
         ├───handlers/
-        │   ├───getBreakDownHandler.js
-        │   ├───getBreakDownStrategiesHandler.js
-        │   ├───getLotCodesHandler.js
+        │   ├───breakdown.js
+        │   ├───breakdownStrategies.js
+        │   ├───lotCodes.js
         │   └───index.js
         ├───lib/
         │   ├───breakDown.js
