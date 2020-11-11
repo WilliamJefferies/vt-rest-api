@@ -10,6 +10,9 @@ Uses vanilla code middleware for param extraction and validation.
 ```npm run debug```
 
 ### Calling the API
+
+#### Calls
+
 ##### Get lotcodes
 ```/api/lotcodes```
 ##### Get breakdown strategies
