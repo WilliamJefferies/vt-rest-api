@@ -18,7 +18,8 @@ Uses vanilla code middleware for param extraction and validation.
 ```/api/breakdown/${breakdown-strategy}/${lotcode}```
 
 ### File Structure
-```├───breakDownStrategies/
+```
+├───breakDownStrategies/
 │   ├───index.js
 │   ├───regionalStrategy.js
 │   ├───varietyStrategy.js
