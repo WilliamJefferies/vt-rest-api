@@ -6,5 +6,5 @@ export default (req, res) => {
         message: '500 Internal Err. Could not retrieve breakdown strategies',
         res: res
     };
-    res.json(lib.constructValidParamsRes('getBreakdownStrategiesHandler', handleErrVars));
+    res.json(lib.resBuilder.validParams('getBreakdownStrategiesHandler', handleErrVars));
 }
