@@ -29,7 +29,7 @@ const sort = (data) => {
     let sortable = [];
     let returnArr = [];
     for (let item in data) {
-        sortable.push([data[item], data[item].percentage]);;
+        sortable.push([data[item], data[item].percentage]);
     }
     const sorted = sortable.sort((a, b) => b[1] - a[1]);
 

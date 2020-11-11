@@ -6,19 +6,22 @@ DB Wrapper
  */
 
 /*
-returns valid lot codes
+Returns valid lot codes
  */
 const getValidLotCodes = () => {
     return dataConnector.validParams.codes;
 };
 
 /*
-returns valid strategies
+Returns valid strategies
  */
 const getValidStrategies = () => {
     return dataConnector.validParams.strategies;
 };
 
+/*
+Returns data relevant to lot code
+ */
 const getData = (lotCode, handleErrVars) => {
     switch (lotCode.toLowerCase()) {
         case '11yvchar001':
