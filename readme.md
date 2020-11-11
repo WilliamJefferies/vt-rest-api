@@ -17,6 +17,62 @@ Uses vanilla code middleware for param extraction and validation.
 ##### Get breakdown
 ```/api/breakdown/${breakdown-strategy}/${lotcode}```
 
+#### Returns
+``` GET /api/breakdown/region/15MPPN002-VK ```
+```
+{
+    "breakDownType": "region",
+    "lotCode": "15mppn002-vk",
+    "breakdown": [
+        {
+            "region": "Mornington",
+            "percentage": 81
+        },
+        {
+            "region": "Yarra Valley",
+            "percentage": 10
+        },
+        {
+            "region": "Heathcote",
+            "percentage": 5
+        },
+        {
+            "region": "Macedon",
+            "percentage": 2
+        },
+        {
+            "region": "Port Phillip",
+            "percentage": 2
+        }
+    ]
+}
+```
+
+``` GET /api/lotcodes ```
+
+```
+{
+    "validInput": [
+        "11YVCHAR001",
+        "11YVCHAR002",
+        "15MPPN002-VK"
+    ]
+}
+```
+
+``` GET /api/breakdown-strategieies ```
+
+```
+{
+    "validInput": [
+        "year",
+        "variety",
+        "region",
+        "year-variety"
+    ]
+}
+```
+
 ### SRC Structure
 ```
 ├───breakDownStrategies/
