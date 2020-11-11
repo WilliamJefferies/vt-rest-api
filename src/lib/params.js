@@ -2,7 +2,9 @@ import url from 'url';
 import * as lib from '.'
 
 
-// validates params with known strategies and lotcodes
+/*
+Validate params agaisnt keys
+ */
 const validate = (caller_name, param, handleErrVars) => {
     let validList;
     caller_name === 'setBreakDownStrategy' ? validList = lib.dataConnector.getValidStrategies()
@@ -12,7 +14,9 @@ const validate = (caller_name, param, handleErrVars) => {
     lib.handleErr(handleErrVars);
 };
 
-// extracts params from req
+/*
+Extract params from req url
+ */
 const parse = (req, caller_name, handleErrVars) => {
     const expectedParamsSize = 3;
     let param;

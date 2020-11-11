@@ -5,12 +5,16 @@ import * as lib from '.'
 DB Wrapper
  */
 
-// called on lot codes get request
+/*
+returns valid lot codes
+ */
 const getValidLotCodes = () => {
     return dataConnector.validParams.codes;
 };
 
-// called on valid strategies get request
+/*
+returns valid strategies
+ */
 const getValidStrategies = () => {
     return dataConnector.validParams.strategies;
 };

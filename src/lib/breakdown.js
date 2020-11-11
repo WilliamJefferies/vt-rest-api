@@ -1,5 +1,8 @@
 import * as lib from './index';
 
+/*
+Runs a breakdown with a given strategy
+ */
 const run = (data, strategy, handleErrVars) => {
     let processedData = {};
 
@@ -19,7 +22,9 @@ const run = (data, strategy, handleErrVars) => {
     return processedData;
 };
 
-//sort data
+/*
+Sorts unsorted break down results
+ */
 const sort = (data) => {
     let sortable = [];
     let returnArr = [];

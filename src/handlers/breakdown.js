@@ -1,5 +1,8 @@
 import * as lib from "../lib";
 
+/*
+Handles get /api/breakdown/*
+ */
 export default (req, res) => {
     const strategy = req.breakDownStrategy;
     const lotCode = req.lotCode;

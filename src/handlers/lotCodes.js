@@ -1,5 +1,8 @@
 import * as lib from '../lib';
 
+/*
+Handles get /api/lotcodes
+ */
 export default (req, res) => {
     const handleErrVars = {
         code: 500,

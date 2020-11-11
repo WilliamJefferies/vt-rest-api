@@ -1,5 +1,8 @@
 import * as lib from "."
 
+/*
+Build breakdown response
+ */
 const breakdown = (strategy, lotCode, sortedData, handleErrVars) => {
     try {
         return {
@@ -12,6 +15,9 @@ const breakdown = (strategy, lotCode, sortedData, handleErrVars) => {
     }
 }
 
+/*
+Build valid params result
+ */
 const validParams = (caller_name, handleErrVars) => {
     let valid;
     try {

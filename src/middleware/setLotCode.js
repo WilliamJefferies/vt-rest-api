@@ -1,7 +1,7 @@
 import * as lib from '../lib'
 
 /*
-Middleware to get the lotcode in the request url and set to req obj
+Middleware to get the lot code param in the request url and set to req obj
  */
 export default (req, res, next) => {
     const handleErrVars = {

@@ -1,7 +1,7 @@
 import * as lib from '../lib'
 
 /*
-Middleware to get the break down strategy in the request url and set to req obj
+Middleware to get the break down strategy param in the request url and set to req obj
  */
 export default (req, res, next) => {
     const handleErrVars = {

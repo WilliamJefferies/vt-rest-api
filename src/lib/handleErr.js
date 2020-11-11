@@ -1,5 +1,5 @@
 /*
-This should really be a singleton class rather than functionally called
+This should really be a singleton class rather than functionally called or middleware
  */
 export default (handleErrVars) => {
     console.error(handleErrVars.message);
