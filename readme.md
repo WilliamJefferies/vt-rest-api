@@ -1,5 +1,5 @@
 # VT Rest API
-Simple rest API for demonstration of node skills using a simple strategy design pattern and no db wrapper.
+Simple rest API for demonstration of node skills using a strategy design pattern and no db wrapper.
 
 ### Getting Started
 ##### Install & Start
