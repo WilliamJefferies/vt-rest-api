@@ -1,4 +1,4 @@
-import * as lib from "./validParams";
+import * as lib from "."
 
 const breakdown = (strategy, lotCode, sortedData, handleErrVars) => {
     try {
@@ -15,8 +15,8 @@ const breakdown = (strategy, lotCode, sortedData, handleErrVars) => {
 const validParams = (caller_name, handleErrVars) => {
     let valid;
     try {
-        caller_name === 'getBreakdownStrategiesHandler' ? valid = lib.getValidStrategies()
-            : caller_name === 'getLotCodesHandler' ? valid = lib.getValidLotCodes()
+        caller_name === 'getBreakdownStrategiesHandler' ? valid = lib.dataConnector.getValidStrategies()
+            : caller_name === 'getLotCodesHandler' ? valid = lib.dataConnector.getValidLotCodes()
             : lib.handleErr(handleErrVars);
         return {
             validInput: valid
