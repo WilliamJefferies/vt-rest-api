@@ -1,7 +1,7 @@
 # VT Rest API
 Simple rest API for demonstration of express.js skills using a strategy design pattern without async db.
 
-Uses vanilla code middleware for param extraction and validation.
+Uses vanilla middleware for param extraction and validation.
 
 ## Getting Started
 ##### Install & Start
