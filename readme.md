@@ -76,7 +76,7 @@ Uses vanilla middleware for param extraction and validation.
 }
 ```
 
-## SRC Tree
+## Directory Structure
 ```
 |-- Project Dir
     |-- .babelrc
@@ -106,5 +106,4 @@ Uses vanilla middleware for param extraction and validation.
             ├───index.js
             ├───setBreakDownStrategy.js
             └───setLotCode.js
-
 ```
