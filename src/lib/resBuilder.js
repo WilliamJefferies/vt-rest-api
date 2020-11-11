@@ -3,7 +3,7 @@ import * as lib from "."
 /*
 Build breakdown response
  */
-const breakdown = (strategy, lotCode, sortedData, handleErrVars) => {
+const breakDown = (strategy, lotCode, sortedData, handleErrVars) => {
     try {
         return {
             breakDownType: strategy,
@@ -29,4 +29,4 @@ const validBreakdownStrategies = () => {
     return {strategies: lib.dataConnector.getValidStrategies()}
 };
 
-export {breakdown, validLotCodes, validBreakdownStrategies};
+export {breakDown, validLotCodes, validBreakdownStrategies};
