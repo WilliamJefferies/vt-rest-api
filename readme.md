@@ -93,8 +93,8 @@ Uses vanilla middleware for param extraction and validation.
         ├───handlers/
         │   ├───breakdown.js
         │   ├───breakdownStrategies.js
-        │   ├───lotCodes.js
-        │   └───index.js
+        │   ├───index.js
+        │   └───lotCodes.js
         ├───lib/
         │   ├───breakDown.js
         │   ├───dataConnector.js
