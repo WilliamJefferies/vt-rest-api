@@ -11,7 +11,7 @@ Uses vanilla code middleware for param extraction and validation.
 
 ## Calling the API
 
-#### Calls
+### Calls
 
 ##### Get lotcodes
 ```/api/lotcodes```
@@ -20,7 +20,7 @@ Uses vanilla code middleware for param extraction and validation.
 ##### Get breakdown
 ```/api/breakdown/${breakdown-strategy}/${lotcode}```
 
-#### Returns
+### Returns
 ``` GET /api/breakdown/region/15MPPN002-VK ```
 ```
 {
@@ -76,7 +76,7 @@ Uses vanilla code middleware for param extraction and validation.
 }
 ```
 
-## SRC Structure
+## SRC Tree
 ```
 ├───breakDownStrategies/
 │   ├───index.js
