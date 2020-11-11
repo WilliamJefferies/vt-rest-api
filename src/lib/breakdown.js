@@ -25,11 +25,11 @@ const run = (data, strategy, handleErrVars) => {
 /*
 Sorts unsorted break down results
  */
-const sort = (data) => {
+const sort = (processedData) => {
     let sortable = [];
     let returnArr = [];
-    for (let item in data) {
-        sortable.push([data[item], data[item].percentage]);
+    for (let item in processedData) {
+        sortable.push([processedData[item], processedData[item].percentage]);
     }
     const sorted = sortable.sort((a, b) => b[1] - a[1]);
 
