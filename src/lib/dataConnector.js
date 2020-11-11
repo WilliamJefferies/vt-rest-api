@@ -9,14 +9,14 @@ DB Wrapper
 Returns valid lot codes
  */
 const getValidLotCodes = () => {
-    return dataConnector.validParams.codes;
+    return dataConnector.dbKeys.codes;
 };
 
 /*
 Returns valid strategies
  */
 const getValidStrategies = () => {
-    return dataConnector.validParams.strategies;
+    return dataConnector.dbKeys.strategies;
 };
 
 /*
