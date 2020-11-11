@@ -9,8 +9,8 @@ export default (req, res, next) => {
         message: '400 Bad Request: Invalid Lot Code',
         res: res
     };
-    const lc = lib.parseParams(req, 'setLotCode', handleErrVars);
-    lib.validateParams('setLotCode', lc, handleErrVars);
+    const lc = lib.params.parse(req, 'setLotCode', handleErrVars);
+    lib.params.validate('setLotCode', lc, handleErrVars);
     req.lotCode = lc.toLowerCase(); //standardise
     next();
 };
