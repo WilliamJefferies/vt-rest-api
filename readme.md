@@ -6,7 +6,7 @@ Uses vanilla code middleware for param extraction and validation.
 ### Getting Started
 ##### Install & Start
 ```npm install && npm start```
-#### Debug
+##### Debug
 ```npm run debug```
 
 ### Calling the API
