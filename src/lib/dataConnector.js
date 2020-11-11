@@ -2,10 +2,6 @@ import * as dataConnector from '../../data'
 import * as lib from '.'
 
 /*
-DB Wrapper
- */
-
-/*
 Returns valid lot codes
  */
 const getValidLotCodes = () => {

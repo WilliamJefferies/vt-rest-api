@@ -10,4 +10,4 @@ export default (req, res) => {
         res: res
     };
     res.json(lib.resBuilder.validLotCodes());
-}
+};
