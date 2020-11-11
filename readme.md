@@ -17,7 +17,7 @@ Uses vanilla code middleware for param extraction and validation.
 ##### Get breakdown
 ```/api/breakdown/${breakdown-strategy}/${lotcode}```
 
-### File Structure
+### SRC Structure
 ```
 ├───breakDownStrategies/
 │   ├───index.js
