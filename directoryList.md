@@ -1,6 +1,5 @@
 |-- Project Dir
     |-- .babelrc
-    |-- .gitignore
     |-- index.js
     |-- package-lock.json
     |-- package.json
@@ -27,4 +26,3 @@
             ├───index.js
             ├───setBreakDownStrategy.js
             └───setLotCode.js
-
