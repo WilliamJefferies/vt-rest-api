@@ -55,7 +55,7 @@ Uses vanilla middleware for param extraction and validation.
 
 ```
 {
-    "validInput": [
+    "lotCodes": [
         "11YVCHAR001",
         "11YVCHAR002",
         "15MPPN002-VK"
@@ -67,7 +67,7 @@ Uses vanilla middleware for param extraction and validation.
 
 ```
 {
-    "validInput": [
+    "strategies": [
         "year",
         "variety",
         "region",

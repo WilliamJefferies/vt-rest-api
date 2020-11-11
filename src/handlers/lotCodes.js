@@ -9,6 +9,5 @@ export default (req, res) => {
         message: '500 Internal Err. Could not retrieve lot codes',
         res: res
     };
-
-    res.json(lib.resBuilder.validParams('getLotCodesHandler', handleErrVars));
+    res.json(lib.resBuilder.validLotCodes());
 }

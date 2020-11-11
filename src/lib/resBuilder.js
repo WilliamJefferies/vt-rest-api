@@ -16,20 +16,17 @@ const breakdown = (strategy, lotCode, sortedData, handleErrVars) => {
 }
 
 /*
-Build valid params result
+Build valid lot codes result
  */
-const validParams = (caller_name, handleErrVars) => {
-    let valid;
-    try {
-        caller_name === 'getBreakdownStrategiesHandler' ? valid = lib.dataConnector.getValidStrategies()
-            : caller_name === 'getLotCodesHandler' ? valid = lib.dataConnector.getValidLotCodes()
-            : lib.handleErr(handleErrVars);
-        return {
-            validInput: valid
-        };
-    } catch (e) {
-        lib.handleErr(handleErrVars, e);
-    }
+const validLotCodes = () => {
+    return {lotCodes: lib.dataConnector.getValidLotCodes()}
 };
 
-export {breakdown, validParams};
+/*
+Build valid lot codes result
+ */
+const validBreakdownStrategies = () => {
+    return {strategies: lib.dataConnector.getValidStrategies()}
+};
+
+export {breakdown, validLotCodes, validBreakdownStrategies};
