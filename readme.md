@@ -3,13 +3,13 @@ Simple rest API for demonstration of express.js skills using a strategy design p
 
 Uses vanilla code middleware for param extraction and validation.
 
-### Getting Started
+## Getting Started
 ##### Install & Start
 ```npm install && npm start```
 ##### Debug
 ```npm run debug```
 
-### Calling the API
+## Calling the API
 
 #### Calls
 
@@ -76,7 +76,7 @@ Uses vanilla code middleware for param extraction and validation.
 }
 ```
 
-### SRC Structure
+## SRC Structure
 ```
 ├───breakDownStrategies/
 │   ├───index.js
