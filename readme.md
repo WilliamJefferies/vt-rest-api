@@ -78,29 +78,21 @@ Uses vanilla middleware for param extraction and validation.
 
 ## SRC Tree
 ```
-├───breakDownStrategies/
-│   ├───index.js
-│   ├───regionalStrategy.js
-│   ├───varietyStrategy.js
-│   ├───yearVarietyStrategy.js
-│   └───yearlyStrategy.js
 ├───handlers/
 │   ├───getBreakDownHandler.js
 │   ├───getBreakDownStrategiesHandler.js
 │   ├───getLotCodesHandler.js
 │   └───index.js
 ├───lib/
-│   ├───breakdown.js
-│   ├───constructBreakDownRes.js
-│   ├───constructValidParamsRes.js
+│   ├───breakDown.js
 │   ├───dataConnector.js
 │   ├───handleErr.js
 │   ├───index.js
 │   ├───params.js
-│   ├───sortData.js
-│   └───validParams.js
+│   └───resBuilder.js
 └───middleware/
     ├───index.js
     ├───setBreakDownStrategy.js
     └───setLotCode.js
+
 ```
