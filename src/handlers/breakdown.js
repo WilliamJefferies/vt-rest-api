@@ -19,5 +19,5 @@ export default (req, res) => {
     const data = lib.dataConnector.getData(lotCode, handleErrVars);
     const brokenDownData = lib.breakDown.run(data, strategy, handleErrVars);
     const sortedData = lib.breakDown.sort(brokenDownData, handleErrVars);
-    res.json(lib.resBuilder.breakDown(strategy, lotCode, sortedData, handleErrVars));
+    res.status(200).json(lib.resBuilder.breakDown(strategy, lotCode, sortedData, handleErrVars));
 };

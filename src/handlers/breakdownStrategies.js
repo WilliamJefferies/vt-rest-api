@@ -9,5 +9,5 @@ export default (req, res) => {
         message: '500 Internal Err. Could not retrieve breakdown strategies',
         res: res
     };
-    res.json(lib.resBuilder.validBreakdownStrategies());
+    res.status(200).json(lib.resBuilder.validBreakdownStrategies());
 };

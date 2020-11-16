@@ -2,12 +2,16 @@ import express from 'express';
 import helmet from 'helmet';
 import * as middleware from './src/middleware';
 import * as handlers from "./src/handlers";
+import cors from 'cors'
 
 const app = express();
-const PORT = 3000;
+const PORT = 8080;
 
 // first layer security
 app.use(helmet())
+
+// cross origin resource sharing
+app.use(cors())
 
 // middleware to get the break down strategy param in the request url and set to req obj
 app.use('/api/breakdown/', middleware.setBreakDownStrategy);
