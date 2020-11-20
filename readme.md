@@ -1,5 +1,5 @@
 # VT Rest API
-Light weight node app that uses express.js without an async db.
+Light weight node app that uses express.js with data in file system.
 
 Uses vanilla middleware for param extraction and validation.
 
