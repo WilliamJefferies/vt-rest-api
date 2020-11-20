@@ -1,5 +1,5 @@
 # VT Rest API
-Simple rest API for demonstration of express.js skills using a strategy design pattern without async db.
+Node app that uses express.js without an async db.
 
 Uses vanilla middleware for param extraction and validation.
 
