@@ -1,5 +1,5 @@
 # Wine App Node
-Light weight node app that uses express.js with data in file system.
+Light weight rest api that uses express.js with custom middleware to serve data from file system.
 
 Uses vanilla middleware for param extraction and validation.
 
